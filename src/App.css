@@ -1,0 +1,301 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #1da190;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 16px 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+  padding: 24px;
+  text-align: left;
+}
+
+.sider-layout{
+  background: #fff;
+  padding: 24px;
+  text-align: left;
+  overflow: auto;
+  height: 100vh;
+  margin-top: 64px;
+  position: fixed;
+  left: 0;
+}
+
+.sidernav-menu{
+  height: 100%;
+  border-right: 0;
+}
+
+/* .sidernav-menu .ant-menu-sub.ant-menu-inline{
+  background: pink
+} */
+
+.sidernav-menu .ant-menu-item-selected,
+.sidernav-menu .ant-menu-submenu-selected,
+.sidernav-menu .ant-menu-item-active,
+.sidernav-menu .ant-menu-submenu-title:hover{
+  color: #0ba5c0;
+}
+
+.sidernav-menu .ant-menu-submenu-selected .ant-menu-submenu-title,
+.sidernav-menu .ant-menu-item-selected{
+  font-weight: bold;
+}
+
+.sider-layout .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #eae5ff;
+  font-weight: bold;
+}
+
+.sidernav-menu .ant-menu-item:active,
+.sidernav-menu .ant-menu-submenu-title:active{
+  background-color: #eae5ff;
+}
+
+.sidernav-menu .ant-menu-item::after{
+  border-right: 3px solid #743ede;
+}
+
+.header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.header-text{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+
+.content-layout{
+  margin: 24px 16px 0px 116px;
+  overflow: initial;
+}
+
+.content-layout-background{
+  background: #fff;
+  padding: 24px;
+  text-align: left;
+}
+
+.content-header{
+  font-size: 50px;
+}
+
+.content-equation-input{
+  font-size: 20px;
+  width: 365px;
+}
+
+.content-equation-error{
+  color: red;
+  font-size: 15px;
+}
+
+.content-table .ant-table{
+  font-size: 20px;
+}
+
+.content-calculate-button .ant-btn{
+  line-height: 1;
+  margin-left: 10px;
+  font-size: 20px;
+  height: 41px;
+}
+
+.content-calculate-button .ant-btn-primary{
+  background-color: #8f1a1a;
+  border: #8f1a1a;
+}
+
+.content-attribute-input-line{
+  margin-top: 10px;
+}
+
+.content-attribute-input .ant-input{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.content-text{
+  font-size: 30px;
+}
+
+.content-example-button .ant-btn{
+  line-height: 1;
+  font-size: 20px;
+  height: 41px;
+}
+
+.content-plus-minus-button .ant-btn{
+  line-height: 1;
+  font-size: 20px;
+  height: 41px;
+  width: 44px;
+}
+
+.content-plus-minus-line{
+  margin-bottom: 10px;
+}
+
+.content-n-text{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.content-example-button .ant-btn-primary,
+.content-plus-minus-button .ant-btn-primary{
+  background-color: #8f1a1a;
+  border: #8f1a1a;
+}
+
+.content-matrix-area{
+  display: flex;
+  flex-flow: row;
+}
+
+.content-matrix-text-start{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.content-matrix-text{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content-matrix-input-area{
+  align-items: center;
+}
+
+.content-matrix-input-row,
+.content-point-input-row{
+  margin: 10px;
+}
+
+.content-point-text-column{
+  margin: 5px;
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.content-matrix-input-column,
+.content-point-input-column{
+  margin: 5px;
+}
+
+.content-point-check-column{
+  margin-left: 75px;
+}
+
+.content-point-check-column .ant-checkbox-inner::after{
+  width: 11.42857142px;
+  height: 18.28571428px;
+}
+
+.content-point-check-column .ant-checkbox-inner{
+  width: 30px;
+  height: 30px;
+}
+
+.content-point-check-column .ant-checkbox-checked .ant-checkbox-inner{
+  background-color: #8f1a1a;
+  border: #8f1a1a;
+}
+
+.content-matrix-input-column .ant-input{
+  font-size: 18px;
+  width: 60px;
+  text-align: center;
+}
+
+.content-point-input-column .ant-input{
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
+}
+
+.content-matrix-calculate-button .ant-btn{
+  line-height: 1;
+  font-size: 20px;
+  height: 41px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-matrix-calculate-button .ant-btn-primary{
+  background-color: #8f1a1a;
+  border: #8f1a1a;
+}
+
+.content-attribute-input-matrix-line{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.desmos-graph-hide{
+  display: none;
+  height: 1000px;
+}
+
+.desmos-graph-show{
+  height: 1000px;
+}
